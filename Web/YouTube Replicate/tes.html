@@ -1,0 +1,52 @@
+<style>
+.mic-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button .tooltip,
+.mic-button .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.mic-button:hover .tooltip{
+  opacity: 1;
+}
+
+.mic-icon{
+  height: 24px;
+}
+
+
+</style>
+
+
+<button class = "mic-button">
+  <div class = " icon-image">
+    <img class = "mic-icon" src = "ICON/voice-search-icon.svg">
+  </div> 
+  <div class = "tooltip">
+    Search with your voice
+  </div>
+</button>
